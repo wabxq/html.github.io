@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css" media="screen">
+		.k{
+			/*四个值的顺序，上右下左。如果某个值没有指定，找对面。*/
+			width: 300px;
+			height: 300px;
+			/*
+				1. 如果边框上下左右都一样，那么就简写 bd+
+                2. 如果某个方向不一样，在简写之后再单独设置该方向
+                3. 如果只是某个属性不一样，则在简写之后单独设置该属性
+                4. 如果只是某个方向的某个属性不一样，在简写之后，单独设置该方向的该属性
+                
+			*/
+			border: 50px solid rgb(200,200,100);
+			/*border-right: 5px dashed rgb(200,100,200);*/
+			/*border-bottom-color: black;*/
+			border-color: red red transparent transparent;
+		}
+
+		body{
+			min-height: 2000px;
+			/*background-image: url(img/bg.jpg);
+			background-position: center center;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-color: #0f0;*/
+			
+
+			background: url(img/bg.jpg) center center /auto auto no-repeat fixed #0f0;
+			-webkit-background-size: 100% auto;
+			background-size: 100% auto;
+			/*
+			background-size  css3属性  浏览器支持情况不一，有的内核需要使用前缀
+				-webkit-   webkit内核的前缀
+				-moz-      firefox的前缀
+				-o-        opera的前缀
+				-ms-       ie的前缀
+			emmet 支持前缀的书写
+				bgsz tab
+				anim  tab
+			*/
+		}
+	</style>
+</head>
+<body>
+	<!-- <div class="k"></div> -->
+</body>
+</html>

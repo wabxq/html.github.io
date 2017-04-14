@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	h1{
+		color: green;
+	}
+	/*
+		继承，子元素从祖先元素中继承属性
+		覆盖，子元素的新属性覆盖继承的属性
+		      后面设置的属性会覆盖原先设置的属性
+			  优先级高的属性覆盖优先级低的属性
+		语法：
+		选择符{
+			属性名:属性值;
+			属性名:属性值;
+			属性名:属性值;
+		}
+
+		结构表现行为相互分离
+			
+		使用CSS的方式
+			行内样式（内联样式）   style 属性的方式    只对本标签有效      一般不用（JS控制样式时用，交互时）
+			页内样式			   style标签（head部分）  只对本网页有效           这些CSS只对该网页有效
+			外部样式               link标签			   对所有链接本CSS的网页有效   把网站里常见的CSS设置
+
+		使用的外部样式是最多的。
+	*/
+	</style>
+	<link rel="stylesheet" href="css.css">
+</head>
+<body>
+	<h1 style="color:red;">一号标题</h1>
+	<h1>一号标题</h1>
+	<h2>二号标题</h2>
+	<p title="提示文本">段落文字段落文字段落文字段落文字段落文字段落文字段落文字</p>
+
+	<!-- 全局属性
+		id 		名字
+		class   类
+		title   提示文本
+		style   样式
+        
+        lang accesskey tabindex data-* hidden translate contenteditable
+	 -->
+</body>
+</html>

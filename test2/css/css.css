@@ -1,0 +1,30 @@
+body{
+	padding: 0;
+	margin: 0;
+}
+.k{
+	width: 200px;
+	height: 200px;
+	/*padding: 20px;*/
+	border: 1px solid #000;
+	margin: 30px;
+	overflow: auto;
+	overflow-x:auto;
+	overflow-y: hidden;
+}
+.k img{
+	width: 100px;
+	transition:all 1s;
+}
+.k:hover img{
+	width: 300px;
+}
+.l{
+	width: 1000px;
+	height: 100px;
+	padding: 10px;
+	margin: 10px;
+	/*display: none;*/
+	/*visibility: hidden;*/
+	cursor: row-resize;
+}

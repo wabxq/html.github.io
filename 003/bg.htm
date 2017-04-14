@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    body{
+      background-color:hsl(0,50%,50%);
+    }
+    /* 
+    颜色的表示
+      颜色的名称： red  green blue  purple pink
+      十六进制数字(6位，分别代表红绿蓝)： #ff0000  #f00
+      rgb函数的方式
+      rgba函数的方式
+      hsl函数的方式
+      hsla函数的方式
+    */
+    #abc{
+      width: 200px;
+      height: 200px;
+      /* background-color: rgba(255,255,255,0.9); */
+    }
+  </style>
+</head>
+<body>
+  <div id="abc">一些文字</div>
+  <script>
+    var a=document.getElementById("abc");
+    a.style.backgroundColor='green';
+   </script>
+</body>
+</html>
