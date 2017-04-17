@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<!--<link href="https://cdn.bootcss.com/meyer-reset/2.0/reset.css" rel="stylesheet">-->
+		<!--<link rel="stylesheet" type="text/css" href="css/reset.css"/>-->
+		<!--<link rel="stylesheet" type="text/css" href="css/reset.min.css"/>-->
+		<link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+		<style type="text/css">	
+/*
+CSS重置
+	不同的浏览器在处理元素的时候，往往会赋予不同的默认值
+	在做我们的样式之前，先把不同的浏览器统一化
+		置零   reset 			Eric Meyer’s “Reset CSS”	   比较粗暴
+		统一处理，不置零 			Normalize.css                温和一些       用的较多
+	
+	head部分里面先放重置，再放你的css
+	
+CDN 内容分发网络
+	在使用一些公用的CSS、JS等功能文件，直接调用存在别人服务器上的代码
+	
+	好处
+		省服务空间
+		加载比较快
+		利用缓存
+	
+	缺点
+		你的网站要依赖于cdn网站
+列表
+	list-style 复合属性
+		list-style-type 类型
+		list-style-position 位置
+		list-style-image 图像
+	ul默认值（高级浏览器里）
+		margin:16px 0;
+		padding:0 0 0 40px;
+		
+		可以利用list-style-type属性在ul ol之间进行切换
+
+两种特殊的选择符
+	 伪类选择符   a:link  a:visited a:hover  e:nth-child
+	 伪对象选择符  
+	 	e::before  e::after 需要和content属性配合使用     
+	 		会在内容的前面和后面生成一个内联元素，他的内容content属性指定的内容
+
+实现复杂的交互效果的时候
+	学会表述效果（用自己的话说，用专业术语说）
+	再转换成代码
+
+鼠标悬停的效果的时候
+	悬停谁
+	谁做变化	
+	
+	
+绝对定位的基准，最近的定位祖先元素
+	当某个内联元素绝对定位之后，会转换为块状元素
+
+ * */	
+ 		ul{
+ 			width: 100px;
+ 			/*list-style-type: upper-alpha;
+ 			list-style-position: inside;
+ 			list-style-image: url(img/dian_hover.gif);*/
+ 			list-style: upper-alpha inside url(img/dian_hover.gif);
+ 		}
+		</style>
+	</head>
+	<body>
+<!--
+	ul 无序列表
+		li
+	ol 有序列表
+		li
+	dl 定义列表
+		dt
+		dd
+		dd
+	
+	内联元素有缺陷（宽和高，没有竖直方向的margin）
+		一般很少直接把内联元素放到body，布局里去
+		先放块元素，再放布局
+		菜单放到ul li里去
+	
+	如果说某些元素相互之间是并列关系，往往用ul li这样的方式呈现
+	
+-->
+	<ul>
+		<li>一些内哦一些内哦国内一些内哦国内一些内哦国内一些内哦国内一些内哦国内一些内哦国内国内</li>
+		<li>一些内一些内哦国内一些内哦国内一些内哦国内哦国内</li>
+		<li>一些一些内哦国内一些内哦国内一些内哦国内内哦国内</li>
+		<li>一一些内哦国内一些内哦国内一些内哦国内一些内哦国内一些内哦国内一些内哦国内一些内哦国内一些内哦国内一些内哦国内一些内哦国内些内哦国内</li>
+	</ul>
+	</body>
+</html>
