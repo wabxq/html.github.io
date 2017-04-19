@@ -1,0 +1,21 @@
+.clearfix::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+.menu{
+	width: 700px;
+	margin: 100px auto;
+}
+.menu ul{
+	list-style-type: none;
+}
+.menu li{
+	float: left;
+}
+.menu li a{
+	text-decoration: none;
+	background-color: #3498db;
+	color: #fff;
+	margin: 0 5px;
+}
